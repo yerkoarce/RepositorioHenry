@@ -1,17 +1,11 @@
-function cuidadoConElConsoleLog(nombre) {
-    console.log(nombre);
-    return nombre;
-}
-// El dato que importa es el que se retorna con return... el console log es solo de ayuda y no servira para el codigo 
-
-function otraFuncion() {
-    return (
-        "El nombre retornado por la funcion 'cuidadoConElConsoleLog' es: " +
-        cuidadoConElConsoleLog('camilo')
-    )
+function esVocal(str) {
+    if (str.length > 1) {
+        console.log('ingrese una vocal ');
+    } else if (str !== ('a' , 'e' , 'i' , 'o' , 'u')) {
+        console.log('ingrese una volcal') 
+    } else {
+        console.log(str)
+    }
 }
 
-function cuidadoConElReturn(nombre) {     //todo lo que esta por debajo del return no se ejecutara.
-    return nombre;
-    console.log(nombre);
-}
+esVocal('a')

@@ -12,10 +12,34 @@ viajar('Argentina');
 
 function puedeManejar (edad) {
     if (edad >= 18) {
-        console.log('Puede manejar');
+        return true;
     } else {
-        console.log('no puede manejar');
+        return false;
     }
 }
 
 puedeManejar(12)
+
+function tienenMismaLongitud(str1, str2) {
+    // Retorna true si los dos strings tienen la misma longitud.
+    // De lo contrario, retorna false.
+    // Tu código:
+    if (str1.length === str2.length) {
+       return true;
+    } else {
+       return false;
+    }
+ }
+ 
+ tienenMismaLongitud ("hola" , "yerko")
+
+ function elevadoAlCuadrado (num) {
+    console.log(Math.pow(num,2));
+ }
+
+ elevadoAlCuadrado(3)
+
+ function esPositivo(num) {
+    console.log(Math.sign(num));
+ }
+ 
